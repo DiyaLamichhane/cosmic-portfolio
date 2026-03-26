@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Stellar Portfolio | Bachelor Student Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Galaxy Canvas Background -->
+    <canvas id="galaxy-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-user-astronaut"></i>
+                <span>Student Portfolio</span>
+            </a>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-cta"><i class="fas fa-paper-plane"></i> Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero / Profile Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-badge">
+                    <i class="fas fa-graduation-cap"></i> Bachelor of Computer Science
+                </div>
+                <h1 class="glow-text">Diya <span>Lamichhane</span></h1>
+                <p class="subtitle">Beginner web developer, creative problem solver, and lifelong learner crafting digital experiences that make a difference.</p>
+                <div class="hero-stats">
+                    
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                   
+                </div>
+                <div class="btn-group">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-folder-open"></i> View Work</a>
+                    <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+                    <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 class="section-title"><i class="fas fa-user-circle"></i> About Me</h2>
+            <div class="about-container">
+                <!-- <div class="about-image">
+    <img src="c:\Users\hp\Downloads\634537129_18081919478594771_6850302633427682441_n.webp" alt="Diya Lamichhane - Student Portfolio" class="profile-image">
+</div> -->
+<img src="c:\Users\hp\Downloads\634537129_18081919478594771_6850302633427682441_n.webp" 
+     alt="Diya Lamichhane" 
+     style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+     <div class="fun-fact-row">
+        <div class="fun-fact">
+            <i class="fas fa-quote-left"></i>
+            <p>"The only way to do great work is to love what you do." — Steve Jobs</p>
+        </div>
+        <div class="fun-fact">
+            <i class="fas fa-coffee"></i>
+            <p>Fun Fact: I debug best with a cup of coffee ☕</p>
+        </div>
+                </div>
+                <div class="about-content">
+                    <h3>Who Am I?</h3>
+                    <p>I'm a passionate Computer Science student currently in my 3rd year of Bachelor's degree. I love turning ideas into reality through code and design. My journey in tech started 2 years ago, and since then I've been exploring various domains from web development to AI applications.</p>
+                    <p>I believe in continuous learning and pushing boundaries. </p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2 class="section-title"><i class="fas fa-code"></i> Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>HTML5/CSS3</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript </span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React.js</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>PHP</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Git/GitHub</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Figma</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>VS Code</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2 class="section-title"><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Sahakari website</h3>
+                    <p>This web-based solution transforms traditional cooperative management into an efficient, transparent, and user-friendly digital experience.</p>
+                    <div class="project-tech">
+                        <span>Html</span>
+                        <span>Css</span>
+                        <span>Javascript</span>
+                        <span>PHP</span>
+                        <span>MySql</span>
+
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Memory-game</h3>
+                    <p>Card Matching System: Players click on cards to reveal hidden symbols, patterns, or images. Each successful match keeps the cards face-up, while mismatches flip back after a short delay.</p>
+                    <div class="project-tech">
+                        <span>Javascript</span>
+                       
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-smile-wink"></i></div>
+                    <h3>face-emotion-detector</h3>
+                    <p>A real-time AI-powered application that analyzes facial expressions and accurately detects human emotions such as happiness, sadness, anger, surprise, fear, disgust, and neutrality using computer vision and deep learning.
+
+</p>
+                    <div class="project-tech">
+                        <span>Html</span>
+                        <span>Css</span>
+                        <span>Javascript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack e-commerce solution with user authentication, product management, and secure payment integration.</p>
+                    <div class="project-tech">
+                        <span>Html</span>
+                        <span>Css</span>
+                        <span>Javascript</span>
+                        <span>PHP</span>
+                        <span>MySql</span>
+        
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm currently looking for internship opportunities and open to collaborating on interesting projects. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>lamichhanediya@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+977 9761837526</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/DiyaLamichhane</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/DiyaLamichhane</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Diya Lamichhane. All rights reserved. | Built with <i class="fas fa-heart" style="color: #ff6b6b;"></i> |</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
