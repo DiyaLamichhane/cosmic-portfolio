@@ -230,10 +230,7 @@ body {
     font-size: clamp(3rem, 8vw, 5.5rem);
     font-weight: 700;
     margin-bottom: 1rem;
-}
-
-.glow-text span {
-    background: linear-gradient(135deg, #c084fc, #a855f7);
+    background: linear-gradient(135deg, #FFFFFF, #c084fc, #a855f7);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -317,7 +314,6 @@ body {
 }
 
 /* About Section */
-/* Add to your style.css */
 .about-container {
     display: flex;
     gap: 2rem;
@@ -325,18 +321,24 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 1.5rem;
     padding: 2rem;
+    margin-top: 1rem;
 }
 
 .about-image {
-    flex: 0 0 auto;
+    flex-shrink: 0;
 }
 
 .about-image img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #a855f7;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
 }
 
 .about-content {
@@ -355,36 +357,38 @@ body {
     color: #e0d9ff;
 }
 
-@media (max-width: 700px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-}
-
-.about-content p {
-    margin-bottom: 1rem;
-    color: #ddd9ff;
-}
-
-.personal-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+/* Fun Facts Row */
+.fun-fact-row {
+    display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
+    flex-wrap: wrap;
 }
 
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    color: #ddd9ff;
+.fun-fact {
+    background: rgba(168, 85, 247, 0.1);
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    border-left: 3px solid #c084fc;
+    flex: 1;
+    transition: all 0.3s ease;
 }
 
-.info-item i {
+.fun-fact:hover {
+    background: rgba(168, 85, 247, 0.2);
+    transform: translateY(-2px);
+}
+
+.fun-fact i {
     color: #c084fc;
-    width: 20px;
+    margin-right: 0.5rem;
+}
+
+.fun-fact p {
+    margin: 0;
+    font-size: 0.85rem;
+    display: inline;
+    color: #ddd9ff;
 }
 
 /* Skills Section */
@@ -611,16 +615,7 @@ body {
 
 /* Responsive Design */
 @media (max-width: 968px) {
-    .about-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
     .contact-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .personal-info {
         grid-template-columns: 1fr;
     }
 }
@@ -664,4 +659,25 @@ body {
     .section-title {
         font-size: 2rem;
     }
+    
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .fun-fact-row {
+        flex-direction: column;
+    }
+    
+    .fun-fact {
+        text-align: left;
+    }
+   .about-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #a855f7;
+}
 }
